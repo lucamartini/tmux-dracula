@@ -173,7 +173,7 @@ main() {
     fi
 
     if [ $plugin = "network-ping" ]; then
-      IFS=' ' read -r -a colors <<<$(get_tmux_option "@dracula-network-ping-colors" "cyan dark_gray")
+      IFS=' ' read -r -a colors <<<$(get_tmux_option "@dracula-network-ping-colors" "pink dark_gray")
       script="#($current_dir/network_ping.sh)"
     fi
 
