@@ -36,7 +36,7 @@ main() {
   total_download_kbps=0
   total_upload_kbps=0
   while true; do
-    echo "$(printf "%8skB/s • %8skB/s" "↓$total_download_kbps" "↑$total_upload_kbps")"
+    echo "$(printf "%8s kB/s ↓ • %8s kB/s ↑" "$total_download_kbps" "$total_upload_kbps")"
 
     initial_download=$(download_bytes)
     initial_upload=$(upload_bytes)
